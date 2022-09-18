@@ -400,3 +400,17 @@ body.active {
 .navbar-link:is(:hover, :focus, .active) {
     color: var(--blue-crayola);
 }
+
+/* ===== Hero ===== */
+.hero{
+    padding-block: 150px 140px;
+}
+
+.hero-content{
+    margin-block-end: 80px;
+}
+
+.hero-text{
+    font-size: var(--fs-5);
+    margin-block: 25px 40px;
+}

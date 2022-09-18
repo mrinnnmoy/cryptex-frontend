@@ -343,6 +343,12 @@ body.active {
     height: 32px;
 }
 
+.hero-banner img {
+    width: 570px;
+    height: 448px;
+
+}
+
 .nav-toggle-btn .line {
     width: 26px;
     height: 3px;
@@ -355,14 +361,14 @@ body.active {
 }
 
 .nav-toggle-btn.active .line-2 {
-     opacity: 0; 
+    opacity: 0;
 }
 
 .nav-toggle-btn.active .line-3 {
-     transform: rotate(-45deg) translate(4px, -5px); 
+    transform: rotate(-45deg) translate(4px, -5px);
 }
 
-.navbar{
+.navbar {
     position: absolute;
     top: 100%;
     left: 0;
@@ -376,10 +382,10 @@ body.active {
 }
 
 .navbar-item:not(:last-child) {
-     border-block-end: 1px solid var(--white_30); 
+    border-block-end: 1px solid var(--white_30);
 }
 
-.navbar-link{
+.navbar-link {
     color: var(--white);
     font-weight: var(--fw-700);
     padding: 12px 30px;
@@ -387,5 +393,5 @@ body.active {
 }
 
 .navbar-link:is(:hover, :focus, .active) {
-     color: var(--blue-crayola); 
+    color: var(--blue-crayola);
 }

@@ -349,7 +349,7 @@ body.active {
 
 }
 
-.card-title-wrapper img{
+.card-title-wrapper img {
     width: 24px;
     height: 24px;
 }
@@ -402,26 +402,26 @@ body.active {
 }
 
 /* ===== Hero ===== */
-.hero{
+.hero {
     padding-block: 150px 140px;
 }
 
-.hero-content{
+.hero-content {
     margin-block-end: 80px;
 }
 
-.hero-text{
+.hero-text {
     font-size: var(--fs-5);
     margin-block: 25px 40px;
 }
 
 /* ===== Trend ===== */
-.trend{
+.trend {
     background-color: var(--eerie-black-1);
     padding-block-end: 0;
 }
 
-.trend-tab{
+.trend-tab {
     background-color: var(--eerie-black-2);
     border: 1px solid var(--raisin-black);
     border-radius: var(--radius-24);
@@ -430,7 +430,7 @@ body.active {
     margin-block-start: -160px;
 }
 
-.trend-tab .tab-nav{
+.trend-tab .tab-nav {
     display: flex;
     flex-wrap: wrap;
     padding-block-end: 20px;
@@ -438,7 +438,7 @@ body.active {
     border-block-end: 1px solid var(--raisin-black);
 }
 
-.trend-tab .tab-btn{
+.trend-tab .tab-btn {
     color: var(--white);
     font-size: var(--fs-7);
     font-weight: var(--fw-700);
@@ -447,62 +447,124 @@ body.active {
     transition: var(--transition-1);
 }
 
-.trend-tab .tab-btn.active{
+.trend-tab .tab-btn.active {
     background-color: var(--blue-crayola);
 }
 
-.trend-tab .tab-content{
+.trend-tab .tab-content {
     display: grid;
     gap: 20px;
 }
 
-.trend-card{
+.trend-card {
     padding: 20px;
     border-radius: var(--radius-12);
     transition: var(--transition-1);
 }
 
-.trend-card:is(:hover, .active){
+.trend-card:is(:hover, .active) {
     background-color: var(--gunmetal_50);
     box-shadow: var(--shadow-3);
 }
 
-.trend-card .card-title-wrapper{
+.trend-card .card-title-wrapper {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.trend-card .card-title{
+.trend-card .card-title {
     color: var(--white);
     font-size: var(--fs-7);
     font-weight: var(--fw-700);
     transition: var(--transition-1);
 }
 
-.trend-card .card-title:is(:hover, :focus){
+.trend-card .card-title:is(:hover, :focus) {
     color: var(--blue-crayola);
 }
 
-.trend-card ,.card-title .span{
+.trend-card,
+.card-title .span {
     color: var(--cadet-blue-crayola);
     display: inline-block;
     margin-inline-start: 5px;
 }
 
-.trend-card .card-value{
+.trend-card .card-value {
     color: var(--white);
     font-size: var(--fs-3);
     font-weight: var(--fw-700);
     margin-block: 10px;
 }
 
-.trend-card .card-analytics{
+.trend-card .card-analytics {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.trend-card .current-price{
+.trend-card .current-price {
     font-size: var(--fs-7);
+}
+
+/* =====  Market  ===== */
+.market {
+    background-color: var(--eerie-black-1);
+    color: var(--white);
+}
+
+.market .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-block-end: 25px;
+}
+
+.market .btn-link {
+    position: relative;
+    min-width: max-content;
+    font-weight: var(--fw-700);
+    transition: var(--transition-1);
+}
+
+.market .btn-link:is(:hover, :focus) {
+    color: var(--blue-crayola);
+}
+
+.market .btn-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--raisin-black);
+    transition: var(--transition-1);
+}
+
+.market .btn-link:is(:hover, :focus)::after {
+    background-color: var(--blue-crayola);
+}
+
+.market-tab {
+    overflow-x: auto;
+    padding-block-end: 30px;
+}
+
+.market-tab::-webkit-scrollbar {
+    height: 14px;
+}
+
+.market-tab::-webkit-scrollbar-thumb {
+    border: 2px solid hsl(220, 4%, 5%);
+    border-width: 2px 10px;
+}
+
+.market-tab .tab-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-block-end: 40px;
 }

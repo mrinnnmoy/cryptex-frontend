@@ -1,7 +1,7 @@
 'use strict';
 
+/* add event on element */
 
-/* Add event on element */
 const addEventOnElem = function (elem, type, callback) {
     if (elem.length > 1) {
         for (let i = 0; i < elem.length; i++) {
@@ -12,7 +12,7 @@ const addEventOnElem = function (elem, type, callback) {
     }
 }
 
-/*      navbar toggle    */
+/* navbar toggle */
 
 const navbar = document.querySelector("[data-navbar]");
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
@@ -35,7 +35,7 @@ const closeNavbar = function () {
 addEventOnElem(navbarLinks, "click", closeNavbar);
 
 
-/*   header active   */
+/* header active */
 
 const header = document.querySelector("[data-header]");
 
@@ -49,7 +49,7 @@ const activeHeader = function () {
 
 addEventOnElem(window, "scroll", activeHeader);
 
-/*  toggle active on add to fav  */
+/* toggle active on add to fav */
 
 const addToFavBtns = document.querySelectorAll("[data-add-to-fav]");
 
@@ -60,7 +60,7 @@ const toggleActive = function () {
 addEventOnElem(addToFavBtns, "click", toggleActive);
 
 
-/* Scroll reveal effect */
+/* scroll revreal effect */
 const sections = document.querySelectorAll("[data-section]");
 
 const scrollReveal = function () {

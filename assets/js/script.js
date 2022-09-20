@@ -1,3 +1,6 @@
+'use strict';
+
+
 /* Add event on element */
 const addEventOnElem = function (elem, type, callback) {
     if (elem.length > 1) {

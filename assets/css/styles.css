@@ -719,3 +719,13 @@ body.active {
 .instruction-card .card-text {
     padding-inline: 20px;
 }
+
+/*====== About ======*/
+
+.about {
+    background-color: var(--eerie-black-1);
+}
+
+.about-banner {
+    margin-block-end: 40px;
+}

@@ -846,3 +846,25 @@ address.footer-contact-link {
 .social-link:is(:hover, :focus) {
     color: var(--blue-crayola);
 }
+
+/*====== Media Queries ======*/
+
+/* responsive for larger than 575px screen */
+
+@media (min-width: 575px) {
+    :root {
+        --fs-1: 4rem;
+        --fs-2: 3.4rem;
+
+    }
+
+    .container {
+        max-width: 540px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .hero-text {
+        --fs-5: 2rem;
+    }
+}

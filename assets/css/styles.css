@@ -947,3 +947,99 @@ address.footer-contact-link {
         margin-block-end: 0;
     }
 }
+
+
+/* responsive for larger than 992px screen */
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .header {
+        padding-block: 5px;
+    }
+
+    .header.active {
+        top: -60px;
+    }
+
+    .header>.container {
+        gap: 50px;
+    }
+
+    .nav-toggle-btn {
+        display: none;
+    }
+
+    .navbar,
+    .navbar.active {
+        all: unset;
+        margin-inline-end: auto;
+    }
+
+    .navbar-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-item:not(:last-child) {
+        border-block-end: none;
+    }
+
+    .navbar-link {
+        font-size: var(--fs-7);
+        padding: 15px 12px;
+    }
+
+    .navbar-link:is(:hover, :focus, .active) {
+        background-color: var(--blue-crayola);
+        color: var(--white);
+    }
+
+    .hero .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hero-content {
+        margin-block-end: 0;
+    }
+
+    .market-tab {
+        padding-block-end: 0;
+    }
+
+    .about .container {
+        display: grid;
+        grid-template-columns: 1fr 0.8fr;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .about-banner {
+        margin-block-end: 0;
+    }
+
+    .app {
+        padding-block: 0;
+    }
+
+    .app .container {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        align-items: flex-end;
+        gap: 30px;
+    }
+
+    .app-banner {
+        margin-block-start: 0;
+    }
+
+    .app-content {
+        margin-block: 50px;
+    }
+
+}

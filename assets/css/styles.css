@@ -868,3 +868,82 @@ address.footer-contact-link {
         --fs-5: 2rem;
     }
 }
+
+
+/* responsive for larger than 768px screen */
+
+@media (min-width: 768px) {
+    :root {
+        --fs-1: 5rem;
+        --fs-2: 4rem;
+    }
+
+    .container {
+        max-width: 750px;
+    }
+
+    .hero-banner {
+        max-width: max-content;
+        margin-inline: auto;
+    }
+
+    .trend-tab .tab-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .instruction {
+        overflow: hidden;
+    }
+
+    .instruction .section-text {
+        max-width: 40ch;
+        margin-inline: auto;
+    }
+
+    .instruction-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .instruction-card {
+        position: relative;
+    }
+
+    .instruction-card::after {
+        content: "";
+        width: 160px;
+        height: 12px;
+        background-image: url('../images/connect-line.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+        top: 50px;
+        right: -95px;
+    }
+
+    .instruction-list>li:nth-child(even) .instruction-card::after {
+        display: none;
+    }
+
+    .app-banner {
+        max-width: max-content;
+    }
+
+    .footer-top .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-brand {
+        grid-column: 1 / 3;
+    }
+
+    .footer-bottom .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .copyright {
+        margin-block-end: 0;
+    }
+}

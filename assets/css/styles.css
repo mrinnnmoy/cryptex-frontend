@@ -495,8 +495,7 @@ body.active {
     color: var(--blue-crayola);
 }
 
-.trend-card,
-.card-title .span {
+.trend-card .card-title .span {
     color: var(--cadet-blue-crayola);
     display: inline-block;
     margin-inline-start: 5px;
@@ -923,7 +922,7 @@ address.footer-contact-link {
         content: "";
         width: 160px;
         height: 12px;
-        background-image: url('../images/connect-line.png');
+        background-image: url('../img/connect-line.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
